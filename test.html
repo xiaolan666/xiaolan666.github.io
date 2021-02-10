@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="content-type" content="txt/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>支付宝领红包啦！</title>
+<style>
+html, body {
+    margin:0;
+    padding:0;
+    background-color:#0097F7;
+    font-size:16px
+}
+.payment {
+    text-align:center;
+    padding:20px
+}
+.payment-inner {
+    background-color:#fff;
+    padding:20px;
+    border-radius:10px
+}
+.btn {
+    display:inline-block
+}
+</style>
+</head>
+<body>
+<div class="page-group">
+    <div class="payment">
+        <p style="color:#fff;font-size:30px;margin:0 10px 10px">领红包啦！</p>
+        <div class="payment-inner">
+            <div style="text-align:center">
+                <p style="color:red;font-size:22px"> 点击下方按钮即可领取红包 </p>
+                <a class="btn" id="blueBtn" style="margin-top:20px;width:80%;color:#fff;background-color:#0097F7;text-decoration:none;background-color:#0097F7;padding:10px;border-radius:4px" href="alipayqr://">支付宝领红包！</a>
+     
+            <br>
+ 
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+ 
+<div style="display:none">
+    <script>
+const btn = document.querySelector('#blueBtn');
+btn.addEventListener('click', () => {
+  const input = document.createElement('input');
+  document.body.appendChild(input);
+  input.setAttribute('value', '22 http:/W意鹤庭t特迪翰4哐麸孩我送你个红包，快来z h.i ィ寸寳抢');
+  input.select();
+  if (document.execCommand('copy')) {
+    document.execCommand('copy');
+  }
+   document.body.removeChild(input);
+})
+    </script>
+ 
+</div>
+</body>
+</html>
