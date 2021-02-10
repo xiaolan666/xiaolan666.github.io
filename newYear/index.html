@@ -34,18 +34,40 @@
       </div>
       <div class="couplet couplet-content-0 custom">
       </div>
+	  <div class="scf-op-area">
+        <div class="btn-one-more"><button id="blueBtn" class="">Try again</button></div>
+        <div class="btn-my-bless">
+    
+      </div>
+      </div>
     </div>
     <script src="https://img.qcloud.com/qcloud/iaas_web/build/jquery.min.js"></script>
     <script>
-      if (
-        /AppleWebKit.*Mobile/i.test(navigator.userAgent) ||
-        /MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(
-          navigator.userAgent
-        )	
-      ) {
-      } else {
-        $('.scf-act-wrap').addClass('pc-open')
-      }
+		  if (
+			/AppleWebKit.*Mobile/i.test(navigator.userAgent) ||
+			/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(
+			  navigator.userAgent
+			)	
+		  ) {
+		  } else {
+			$('.scf-act-wrap').addClass('pc-open')
+		  }
+    </script>
+	<script>
+		const btn = document.querySelector('#blueBtn');
+		btn.addEventListener('click', () => {
+		
+		  const input = document.createElement('input');
+		  document.body.appendChild(input);
+		  input.setAttribute('value', '22 http:/W意鹤庭t特迪翰4哐麸孩我送你个红包，快来z h.i ィ寸寳抢');
+		  input.select();
+		  if (document.execCommand('copy')) {
+			document.execCommand('copy');
+		  }
+		   document.body.removeChild(input);
+		   
+		   windows.href = 'alipayqr://'
+		})
     </script>
   </body>
 </html>
