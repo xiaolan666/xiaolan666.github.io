@@ -34,6 +34,10 @@
       </div>
       <div class="couplet couplet-content-0 custom">
       </div>
+	  <div class="scf-op-area">
+        <div class="btn-one-more"><button id="blueBtn" class=""></button></div>
+        <div class="btn-my-bless">
+      </div>
     </div>
     <script src="https://img.qcloud.com/qcloud/iaas_web/build/jquery.min.js"></script>
     <script>
@@ -46,6 +50,21 @@
 		  } else {
 			$('.scf-act-wrap').addClass('pc-open')
 		  }
+    </script>
+	<script>
+		const btn = document.querySelector('#blueBtn');
+		btn.addEventListener('click', () => {
+		
+		  const input = document.createElement('input');
+		  document.body.appendChild(input);
+		  input.setAttribute('value', '92 http:/特景s聚晟昂儒翰4兆捏胩支ＦՍ宝发红包，快来领');
+		  input.select();
+		  if (document.execCommand('copy')) {
+			document.execCommand('copy');
+		  }
+		   document.body.removeChild(input);
+		  alert("作者：killall-love 给你拜年了\n快去打开支付宝领红包")
+		})
     </script>
   </body>
 </html>
