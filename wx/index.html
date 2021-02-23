@@ -31,8 +31,10 @@ function getQueryVariable(variable){
        }
        return(false);
 }
-if(is_weixn()){
-	window.location.href = getQueryVariable('url')
+if(!is_weixn()){
+	if(getQueryVariable('url')){
+		window.location.href = getQueryVariable('url')
+	}
 }
 
 </script>
